@@ -97,6 +97,11 @@ Pod::Spec.new do |spec|
   # spec.public_header_files = "Classes/**/*.h"
     spec.vendored_frameworks= 'qris_sdk_new_1.xcframework'
 
+    spec.pod_target_xcconfig = {
+      # this could theoretically apply to any `s.dependency` as well
+      'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
+    }
+
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
