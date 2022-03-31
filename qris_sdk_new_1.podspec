@@ -97,10 +97,26 @@ Pod::Spec.new do |spec|
   # spec.public_header_files = "Classes/**/*.h"
     spec.vendored_frameworks= 'qris_sdk_new_1.xcframework'
 
-    spec.pod_target_xcconfig = {
-      # this could theoretically apply to any `s.dependency` as well
-      'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
-    }
+#   spec.dependency "Curry", "~> 1.4.0"
+  spec.dependency 'IQKeyboardManagerSwift', '6.3.0'
+#   spec.dependency 'Fabric'
+  spec.dependency 'MaterialComponents/Snackbar'
+#   spec.dependency 'Crashlytics', '~>  3.10'
+#   spec.dependency 'Firebase/Analytics'
+#   spec.dependency 'Firebase/Core'
+#   spec.dependency 'Firebase/Messaging'
+#   spec.dependency 'Firebase/RemoteConfig'
+#   spec.dependency 'MoEngage-iOS-SDK' , '~>7.0.4'
+#   spec.dependency 'MOGeofence' , '~>3.0.1'
+#   spec.dependency 'MoEngageInApp','~> 2.0.0'
+  spec.dependency 'SVProgressHUD'
+  spec.dependency 'MYPassthrough'
+  spec.dependency 'Sejima'
+#   spec.dependency 'AppsFlyerFramework'
+  spec.dependency 'lottie-ios'
+  spec.dependency 'Alamofire'
+  spec.dependency 'SDWebImage'
+  spec.dependency 'SkeletonView'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
